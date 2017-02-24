@@ -1,0 +1,29 @@
+{
+  "title": "Hangfire.Pipeline.SqlServer",
+  "copyright": "2016 Steven Woodard",
+  "description": "SQL Server storage implementation for Hangfire.Pipeline",
+  "version": "0.1.0",
+
+  "dependencies": {
+    "Hangfire.Pipeline": "0.1.0"
+  },
+
+  "frameworks": {
+    "net45": {
+      "frameworkAssemblies": {
+        "System.Data": "4.0.0.0"
+      }
+    },
+    "net46": {
+      "frameworkAssemblies": {
+        "System.Data": "4.0.0.0"
+      }
+    }
+  },
+
+  "scripts": {
+    "postcompile": [
+      "dotnet pack --no-build --configuration %compile:Configuration%"
+    ]
+  }
+}

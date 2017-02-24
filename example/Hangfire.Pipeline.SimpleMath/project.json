@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "Hangfire.Pipeline": "0.1.0",
+    "Hangfire.Pipeline.SqlServer": "0.1.0",
+    "Hangfire.Pipeline.Windsor": "0.1.0",
+    "Hangfire.SqlServer": "1.5.0",
+    "log4net": "2.0.5"
+  },
+
+  "frameworks": {
+    "net45": {}
+  }
+}

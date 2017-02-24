@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C35BFC97-F064-48B9-BABA-795B2B464814}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Pipeline", "src\Hangfire.Pipeline\Hangfire.Pipeline.xproj", "{90837831-7C82-4547-B84A-F745884774C5}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Pipeline.SqlServer", "src\Hangfire.Pipeline.SqlServer\Hangfire.Pipeline.SqlServer.xproj", "{B2436DED-92AF-4070-9414-4011B0FA096C}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Pipeline.Windsor", "src\Hangfire.Pipeline.Windsor\Hangfire.Pipeline.Windsor.xproj", "{CCA4B1C3-928F-4985-A95C-EB09FEBC2374}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{DA85936F-1423-4BAF-97DF-BC031D05873A}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Pipeline.WebpageWordCount", "example\Hangfire.Pipeline.WebpageWordCount\Hangfire.Pipeline.WebpageWordCount.xproj", "{B87D3780-4A0A-426E-81DA-955D0B4849E1}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Pipeline.SimpleMath", "example\Hangfire.Pipeline.SimpleMath\Hangfire.Pipeline.SimpleMath.xproj", "{99E29D9F-70BF-4D96-B1E8-226AB3476BC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{BBE5123F-2788-41C6-84FC-D3AAB98A8858}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Pipeline.Tests", "test\Hangfire.Pipeline.Tests\Hangfire.Pipeline.Tests.xproj", "{0202B074-2A79-4200-9D20-801E66898937}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Pipeline.SqlServer.Tests", "test\Hangfire.Pipeline.SqlServer.Tests\Hangfire.Pipeline.SqlServer.Tests.xproj", "{7BE55317-74F4-44E4-B9E1-01347F719429}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Pipeline.Windsor.Tests", "test\Hangfire.Pipeline.Windsor.Tests\Hangfire.Pipeline.Windsor.Tests.xproj", "{4C7622B7-B263-40A9-BA0E-D5FB0B91D7F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8D3C5C52-D7E7-4EF5-9EB4-B337C9B11F88}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		build.bat = build.bat
+		global.json = global.json
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+		test.bat = test.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90837831-7C82-4547-B84A-F745884774C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90837831-7C82-4547-B84A-F745884774C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90837831-7C82-4547-B84A-F745884774C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90837831-7C82-4547-B84A-F745884774C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2436DED-92AF-4070-9414-4011B0FA096C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2436DED-92AF-4070-9414-4011B0FA096C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2436DED-92AF-4070-9414-4011B0FA096C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2436DED-92AF-4070-9414-4011B0FA096C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCA4B1C3-928F-4985-A95C-EB09FEBC2374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA4B1C3-928F-4985-A95C-EB09FEBC2374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA4B1C3-928F-4985-A95C-EB09FEBC2374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA4B1C3-928F-4985-A95C-EB09FEBC2374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B87D3780-4A0A-426E-81DA-955D0B4849E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B87D3780-4A0A-426E-81DA-955D0B4849E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B87D3780-4A0A-426E-81DA-955D0B4849E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B87D3780-4A0A-426E-81DA-955D0B4849E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E29D9F-70BF-4D96-B1E8-226AB3476BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E29D9F-70BF-4D96-B1E8-226AB3476BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E29D9F-70BF-4D96-B1E8-226AB3476BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E29D9F-70BF-4D96-B1E8-226AB3476BC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0202B074-2A79-4200-9D20-801E66898937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0202B074-2A79-4200-9D20-801E66898937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0202B074-2A79-4200-9D20-801E66898937}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0202B074-2A79-4200-9D20-801E66898937}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7BE55317-74F4-44E4-B9E1-01347F719429}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE55317-74F4-44E4-B9E1-01347F719429}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE55317-74F4-44E4-B9E1-01347F719429}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE55317-74F4-44E4-B9E1-01347F719429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C7622B7-B263-40A9-BA0E-D5FB0B91D7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C7622B7-B263-40A9-BA0E-D5FB0B91D7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C7622B7-B263-40A9-BA0E-D5FB0B91D7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C7622B7-B263-40A9-BA0E-D5FB0B91D7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90837831-7C82-4547-B84A-F745884774C5} = {C35BFC97-F064-48B9-BABA-795B2B464814}
+		{B2436DED-92AF-4070-9414-4011B0FA096C} = {C35BFC97-F064-48B9-BABA-795B2B464814}
+		{CCA4B1C3-928F-4985-A95C-EB09FEBC2374} = {C35BFC97-F064-48B9-BABA-795B2B464814}
+		{B87D3780-4A0A-426E-81DA-955D0B4849E1} = {DA85936F-1423-4BAF-97DF-BC031D05873A}
+		{99E29D9F-70BF-4D96-B1E8-226AB3476BC2} = {DA85936F-1423-4BAF-97DF-BC031D05873A}
+		{0202B074-2A79-4200-9D20-801E66898937} = {BBE5123F-2788-41C6-84FC-D3AAB98A8858}
+		{7BE55317-74F4-44E4-B9E1-01347F719429} = {BBE5123F-2788-41C6-84FC-D3AAB98A8858}
+		{4C7622B7-B263-40A9-BA0E-D5FB0B91D7F5} = {BBE5123F-2788-41C6-84FC-D3AAB98A8858}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+{
+  "title": "Hangfire.Pipeline",
+  "copyright": "2016 Steven Woodard",
+  "description": "Job pipeline execution based on Hangfire.io",
+  "version": "0.1.0",
+
+  "dependencies": {
+    "Hangfire.Core": "1.5.0"
+  },
+
+  "frameworks": {
+    "net46": {},
+    "net45": {}
+  },
+
+  "scripts": {
+    "postcompile": [
+      "dotnet pack --no-build --configuration %compile:Configuration%"
+    ]
+  }
+}

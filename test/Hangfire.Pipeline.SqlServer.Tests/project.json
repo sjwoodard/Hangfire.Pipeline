@@ -1,0 +1,17 @@
+{
+  "version": "0.1.0",
+
+  "dependencies": {
+    "Hangfire.Pipeline": "0.1.0",
+    "Hangfire.Pipeline.SqlServer": "0.1.0",
+    "Moq": "4.5.13",
+    "NUnit": "3.4.1",
+    "NUnit.Runners": "3.4.1",
+    "OpenCover": "4.6.519",
+    "ReportGenerator": "2.4.5"
+  },
+
+  "frameworks": {
+    "net45": {}
+  }
+}

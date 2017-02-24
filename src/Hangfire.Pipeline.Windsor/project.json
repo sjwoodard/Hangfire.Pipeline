@@ -1,0 +1,21 @@
+{
+  "title": "Hangfire.Pipeline.Windsor",
+  "description": "Castle Windsor task factory implementation for Hangfire.Pipeline",
+  "version": "0.1.0",
+
+  "dependencies": {
+    "Castle.Windsor": "3.1.0",
+    "Hangfire.Pipeline": "0.1.0"
+  },
+
+  "frameworks": {
+    "net45": {},
+    "net46": {}
+  },
+
+  "scripts": {
+    "postcompile": [
+      "dotnet pack --no-build --configuration %compile:Configuration%"
+    ]
+  }
+}

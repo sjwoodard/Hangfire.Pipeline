@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[MyDataTable]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Data] NVARCHAR(MAX) NULL
+)
