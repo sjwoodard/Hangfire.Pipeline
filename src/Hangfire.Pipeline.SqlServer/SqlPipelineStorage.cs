@@ -39,10 +39,16 @@ namespace Hangfire.Pipeline.SqlServer
                 cmd.AddParameterWithValue("key", jobContext.Id);
                 cmd.AddParameterWithValue("value", bytes);
                 await conn.OpenAsync(ct);
-                Log.Debug("Executing SQL Server INSERT command");
-                var rowsAffected = await cmd.ExecuteNonQueryAsync(ct);
-                conn.Close();
-                return rowsAffected > 0;
+                try
+                {
+                    Log.Debug("Executing SQL Server INSERT command");
+                    var rowsAffected = await cmd.ExecuteNonQueryAsync(ct);
+                    return rowsAffected > 0;
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
         }
 
@@ -55,10 +61,16 @@ namespace Hangfire.Pipeline.SqlServer
                 cmd.CommandText = $"delete from {_options.Table} where {_options.KeyColumn}=@key";
                 cmd.AddParameterWithValue("key", id);
                 await conn.OpenAsync(ct);
-                Log.Debug("Executing SQL Server DELETE command");
-                var rowsAffected = await cmd.ExecuteNonQueryAsync(ct);
-                conn.Close();
-                return rowsAffected > 0;
+                try
+                {
+                    Log.Debug("Executing SQL Server DELETE command");
+                    var rowsAffected = await cmd.ExecuteNonQueryAsync(ct);
+                    return rowsAffected > 0;
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
         }
 
@@ -75,10 +87,16 @@ namespace Hangfire.Pipeline.SqlServer
                 cmd.CommandText = $"select top 1 {_options.ValueColumn} from {_options.Table} where {_options.KeyColumn}=@key";
                 cmd.AddParameterWithValue("key", id);
                 await conn.OpenAsync(ct);
-                Log.Debug("Executing SQL Server SELECT command");
-                var res = await cmd.ExecuteScalarAsync(ct);
-                conn.Close();
-                bytes = (byte[])res;
+                try
+                {
+                    Log.Debug("Executing SQL Server SELECT command");
+                    var res = await cmd.ExecuteScalarAsync(ct);
+                    bytes = (byte[])res;
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
             if (bytes == null)
                 return null;
@@ -106,10 +124,16 @@ namespace Hangfire.Pipeline.SqlServer
                 cmd.AddParameterWithValue("key", jobContext.Id);
                 cmd.AddParameterWithValue("value", bytes);
                 await conn.OpenAsync(ct);
-                Log.Debug("Executing SQL Server UPDATE command");
-                var rowsAffected = await cmd.ExecuteNonQueryAsync(ct);
-                conn.Close();
-                return rowsAffected > 0;
+                try
+                {
+                    Log.Debug("Executing SQL Server UPDATE command");
+                    var rowsAffected = await cmd.ExecuteNonQueryAsync(ct);
+                    return rowsAffected > 0;
+                }
+                finally
+                {
+                    conn.Close();
+                }
             }
         }
 
@@ -125,7 +149,7 @@ namespace Hangfire.Pipeline.SqlServer
             return _options.Serializer.Serialize(jobContext);
         }
 
-        protected virtual IPipelineJobContext Deserialize(string json) 
+        protected virtual IPipelineJobContext Deserialize(string json)
         {
             return _options.Serializer.Deserialize(json);
         }
