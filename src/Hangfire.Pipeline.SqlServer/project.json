@@ -1,8 +1,17 @@
 {
   "title": "Hangfire.Pipeline.SqlServer",
-  "copyright": "2016 Steven Woodard",
-  "description": "SQL Server storage implementation for Hangfire.Pipeline",
+  "copyright": "2017 Steven Woodard",
+  "description": "SQL Server storage implementation for Hangire.Pipeline",
   "version": "0.1.0",
+  "authors": [ "Steven Woodard" ],
+  "packOptions": {
+    "projectUrl": "https://github.com/sjwoodard/Hangfire.Pipeline",
+    "licenseUrl": "https://github.com/sjwoodard/Hangfire.Pipeline/blob/master/LICENSE.md",
+    "summary": "SQL Server storage implementation for Hangfire.Pipeline",
+    "owners": [ "Steven Woodard" ],
+    "tags": [ "Hangfire", "continuations", "task scheduler", "storage" ],
+    "releaseNotes": "Initial release"
+  },
 
   "dependencies": {
     "Hangfire.Pipeline": "0.1.0"

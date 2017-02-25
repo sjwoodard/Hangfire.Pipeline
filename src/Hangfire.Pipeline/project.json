@@ -1,8 +1,17 @@
 {
   "title": "Hangfire.Pipeline",
-  "copyright": "2016 Steven Woodard",
-  "description": "Job pipeline execution based on Hangfire.io",
+  "copyright": "2017 Steven Woodard",
+  "description": "Job pipeline execution based on Hangfire.io, sequences multiple parallel or blocking jobs with continuations",
   "version": "0.1.0",
+  "authors": [ "Steven Woodard" ],
+  "packOptions": {
+    "projectUrl": "https://github.com/sjwoodard/Hangfire.Pipeline",
+    "licenseUrl": "https://github.com/sjwoodard/Hangfire.Pipeline/blob/master/LICENSE.md",
+    "summary": "Core library for Hangfire Pipeline jobs",
+    "owners": [ "Steven Woodard" ],
+    "tags": [ "Hangfire", "continuations", "task scheduler" ],
+    "releaseNotes": "Initial release"
+  },
 
   "dependencies": {
     "Hangfire.Core": "1.5.0"

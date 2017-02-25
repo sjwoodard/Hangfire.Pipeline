@@ -1,7 +1,17 @@
 {
   "title": "Hangfire.Pipeline.Windsor",
-  "description": "Castle Windsor task factory implementation for Hangfire.Pipeline",
+  "copyright": "2017 Steven Woodard",
+  "description": "Castle Windsor IoC implementation for Hangire.Pipeline",
   "version": "0.1.0",
+  "authors": [ "Steven Woodard" ],
+  "packOptions": {
+    "projectUrl": "https://github.com/sjwoodard/Hangfire.Pipeline",
+    "licenseUrl": "https://github.com/sjwoodard/Hangfire.Pipeline/blob/master/LICENSE.md",
+    "summary": "Castle Windsor IoC implementation for Hangire.Pipeline",
+    "owners": [ "Steven Woodard" ],
+    "tags": [ "Hangfire", "continuations", "task scheduler", "ioc", "inversion of control" ],
+    "releaseNotes": "Initial release"
+  },
 
   "dependencies": {
     "Castle.Windsor": "3.1.0",
